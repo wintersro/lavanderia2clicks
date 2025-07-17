@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Lavou Lavanderia - Roupas limpas e secas em até 75 minutos! Serviço de lavanderia rápido, econômico e de qualidade.">
+  <title>2 Clicks Lavanderia - Sua lavanderia inteligente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="shortcut icon" href="assets/logo-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Scroll de rolagem até o topo -->
+  <button onclick="scrollToTop()" class="scroll-btn">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
+  <!-- Header - Links do menu corrigidos para apontar para as seções existentes -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="#home">
+            <!-- Logo da lavanderia, em SVG será gerado em arquivo separado -->
+            <img src="assets/logo-favicon.png" alt="2 clicks Lavanderia">
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#self-service">Quem Somos</a></li>
+          <li><a href="#process">Nossas Máquinas</a></li>
+          <li><a href="#franchise">Franquias</a></li>
+          <li><a href="#economy">Economia</a></li>
+          <li><a href="#contact-form">Contato</a></li>
+        </ul>
+        <button class="mobile-menu-btn">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>2 CLICKS</h1>
+        <h2>Roupas limpas e secas em até 75 min!</h2>
+        <p>Sua lavanderia self-service <strong class="time">24hs.</strong></p>
+        <div class="hero-buttons">
+          <a href="#process" class="btn btn-primary">Conheça nossas máquinas</a>
+          <a href="#self-service" class="btn btn-outline">Como funciona</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Self-Service Laundry Section -->
+  <section id="self-service" class="self-service">
+    <div class="container">
+      <div class="self-service-grid">
+        <div class="self-service-image">
+          <!-- Imagem do interior da lavanderia com máquinas modernas -->
+          <img src="assets/banner.jpg" alt="Interior da Lavou Lavanderia com máquinas modernas">
+        </div>
+        <div class="self-service-content">
+          <div class="section-label">2 CLICKS LAVANDERIA</div>
+          <h2>Sua lavanderia inteligente!</h2>
+          <p>Agende, lave, seque. Economize tempo e dinheiro com a Lavou!</p>
+          <p>Somos a solução perfeita para quem precisa lavar roupas com praticidade, economia e rapidez, tudo isso com a qualidade de máquinas profissionais.</p>
+
+          <div class="price-badge">
+            <div class="price">R$16,00</div>
+            <div class="price-label">por lavagem</div>
+          </div>
+
+          <div class="price-badge">
+            <div class="price">R$16,00</div>
+            <div class="price-label">por secagem</div>
+          </div>
+
+          <div class="price-badge">
+            <div class="price">R$32,00</div>
+            <div class="price-label">Dois cestos</div>
+          </div>
+
+          <div class="service-features">
+            <div class="feature">
+              <!-- SVG de relógio/tempo -->
+              <svg class="feature-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.2-4.5-2.7V7z" />
+              </svg>
+              <p>ABERTO 24 HORAS POR DIA</p>
+            </div>
+            <div class="feature">
+              <!-- SVG de selo de qualidade -->
+              <svg class="feature-icon" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+              <p>SERVIÇO DE QUALIDADE PROFISSIONAL</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept Section -->
+  <section id="concept" class="concept">
+    <div class="container">
+      <div class="concept-grid">
+        <div class="concept-content">
+          <h2>Um novo conceito!</h2>
+          <p>A 2 Clicks traz um conceito inovador para o Brasil de lavanderia self-service com máquinas profissionais!</p>
+          <a href="#process" class="btn btn-light">Saiba Mais</a>
+        </div>
+        <div class="concept-image">
+          <!-- Imagem das máquinas de lavar e secar -->
+          <img src="assets/maquinas-lavanderia.jpeg" alt="Máquinas de lavar e secar da 2 Clicks Lavanderia">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <h2>Lavou, secou, guardou!</h2>
+      <p class="section-subtitle">Máquinas de tecnologia americana, com fornecedores do porte da Maytag e Alliance Laundry System. Você garante o cuidado e carinho que suas roupas pedem.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <!-- SVG de qualidade -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2L4 5v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V5l-8-3zm-1 15l-5-5 1.4-1.4 3.6 3.6 7.6-7.6L20 8l-9 9z" />
+            </svg>
+          </div>
+          <h3>Produtos de qualidade</h3>
+          <p>Máquinas profissionais protegem seus tecidos</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <!-- SVG de rapidez/relógio -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+            </svg>
+          </div>
+          <h3>Roupas limpas e secas em 75 min</h3>
+          <p>Máquinas de alta capacidade e secagem rápida</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <!-- SVG de conforto/espaço -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M8 2h8c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H8c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm0 2v16h8V4H8zm-5 3h2v10H3V7zm18 0h2v10h-2V7z" />
+            </svg>
+          </div>
+          <h3>Espaço para o cliente</h3>
+          <p>Ambiente confortável e acolhedor com Wi-Fi gratuito</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proximity Section -->
+  <section id="proximity" class="proximity">
+    <div class="container">
+      <div class="proximity-content">
+        <h2>Cada vez mais perto de você!</h2>
+        <p>Vamos estar presentes cada vez mais nas suas proximidades para facilitar a sua vida.</p>
+        <a href="#testimonials" class="btn btn-light">Ver depoimentos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Economy Section -->
+  <section id="economy" class="economy">
+    <div class="container">
+      <h2>Economize com a 2 Clicks!</h2>
+      <p class="section-subtitle">Saiba como você pode economizar R$385,00 por mês com a lavagem na 2 Clicks em comparação ao uso da máquina em casa! Além da economia em roupas desgastadas, você também economiza em energia elétrica, água e produtos.</p>
+
+      <div class="economy-grid">
+        <div class="economy-card">
+          <div class="economy-icon">
+            <!-- SVG de relógio/tempo -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+            </svg>
+          </div>
+          <h3>Economia de tempo</h3>
+          <p>Você pode lavar e secar várias roupas em apenas 75 minutos</p>
+        </div>
+        <div class="economy-card">
+          <div class="economy-icon">
+            <!-- SVG de economia de água -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2.5l-5.5 5.5C5.1 9.4 4 11.6 4 14c0 4.4 3.6 8 8 8s8-3.6 8-8c0-2.4-1.1-4.6-2.5-6L12 2.5zm1 16.5c-2.8 0-5-2.2-5-5 0-1.4.6-2.7 1.5-3.6L12 7.9l2.5 2.5c.9.9 1.5 2.2 1.5 3.6 0 2.8-2.2 5-5 5z" />
+            </svg>
+          </div>
+          <h3>Economia de água</h3>
+          <p>Máquinas econômicas e compartilhadas ajudam a reduzir sua conta de água</p>
+        </div>
+        <div class="economy-card">
+          <div class="economy-icon">
+            <!-- SVG de economia de energia -->
+            <svg viewBox="0 0 24 24">
+              <path d="M7 2v11h3v9l7-12h-4l4-8H7zm2 2h7.7l-2.1 4H17l-4.7 8v-6H9V4z" />
+            </svg>
+          </div>
+          <h3>Economia de energia</h3>
+          <p>Nossas máquinas são até 30% mais eficientes energeticamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franchise Section - Atualizado com formulário -->
+  <section id="franchise" class="franchise">
+    <div class="container">
+      <h2>Seja um franqueado da Lavanderia 2 Clicks</h2>
+      <p>Tenha toda estrutura, suporte e tecnologia necessários para empreender com uma marca consolidada no mercado!
+      </p>
+
+      <ul class="franchise-benefits">
+        <li>Departamento dedicado de franchising</li>
+        <li>Suporte e treinamento completo para a abertura</li>
+        <li>Apoio de marketing e operações</li>
+        <li>Negócio inovador e lucrativo</li>
+      </ul>
+
+      <!-- Formulário de franquia adicionado -->
+      <div class="franchise-form-container">
+        <h3>Quero ser um franqueado</h3>
+        <form id="franchiseForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Seu telefone" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="city" name="city" placeholder="Cidade/Estado de interesse" required>
+          </div>
+          <div class="form-group">
+            <select id="investment" name="investment" required>
+              <option value="">Capital disponível para investimento</option>
+              <option value="50-100">R$ 50.000 - R$ 100.000</option>
+              <option value="100-200">R$ 100.000 - R$ 200.000</option>
+              <option value="200-300">R$ 200.000 - R$ 300.000</option>
+              <option value="300+">Acima de R$ 300.000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Conte um pouco sobre você e seu interesse"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary-light">Enviar solicitação</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>O que nossos clientes dizem</h2>
+      <p class="section-subtitle">Nossa maior satisfação é saber que você ficou satisfeito!</p>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Gostei muito do serviço, uso sempre que posso. Melhor custo-benefício de lavanderia."</p>
+          <p class="testimonial-author">Winter Rosa</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Adoro a praticidade e economia que a Lavou me proporciona. Máquinas modernas e super eficientes!"</p>
+          <p class="testimonial-author">Maria Clara</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Experiência incrível! Lavei todas as minhas roupas e edredons que estavam guardados há meses."</p>
+          <p class="testimonial-author">Letícia Souza</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de Contato -->
+  <section id="contact-form" class="contact">
+    <div class="container">
+      <h2>Entre em contato</h2>
+      <p class="section-subtitle">Tem alguma dúvida ou sugestão? Fale conosco!</p>
+
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="contactName" name="name" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="contactEmail" name="email" placeholder="Seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="contactPhone" name="phone" placeholder="Seu telefone">
+        </div>
+        <div class="form-group">
+          <select id="contactSubject" name="subject" required>
+            <option value="">Assunto</option>
+            <option value="duvida">Dúvida</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="contactMessage" name="message" placeholder="Sua mensagem" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer - Links corrigidos -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <!-- Logo em branco -->
+          <img src="assets/logo-favicon.png" alt="Lavou Lavanderia">
+          <p>Lavanderia self-service 24h</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#self-service">Quem Somos</a></li>
+            <li><a href="#process">Nossas Máquinas</a></li>
+            <li><a href="#franchise">Franquias</a></li>
+            <li><a href="#economy">Economia</a></li>
+            <li><a href="#contact-form">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-adress">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone"></i> (11) 98349-9718</p>
+          <p><i class="fas fa-envelope"></i> email2clicks@lavanderia.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Mogi das Cruzes - SP</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100084244600951" target="_blank" aria-label="Facebook">
+              <!-- SVG Facebook -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/2clicks_lavanderia/" target="_blank" aria-label="Instagram">
+              <!-- SVG Instagram -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <!-- SVG Twitter -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z" />
+              </svg>
+            </a>
+            <a href="https://api.whatsapp.com/send?l=pt&phone=5511983499718" target="_blank" aria-label="WhatsApp">
+              <!-- SVG WhatsApp -->
+              <svg viewBox="0 0 32 32">
+                <path d="M16.01 3C9.38 3 4 8.38 4 15.01c0 2.64.86 5.08 2.31 7.06L4 29l7.15-2.26c1.92 1.2 4.19 1.9 6.86 1.9 6.63 0 12.01-5.38 12.01-12.01C30.01 8.38 24.63 3 16.01 3zm0 21.73c-2.17 0-4.18-.65-5.86-1.76l-.42-.27-4.23 1.34 1.38-4.12-.27-.43a9.704 9.704 0 0 1-1.56-5.33c0-5.37 4.37-9.74 9.74-9.74 5.37 0 9.74 4.37 9.74 9.74 0 5.37-4.37 9.74-9.74 9.74zm5.33-7.31c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.65.15-.19.29-.75.95-.92 1.14-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.45-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.65-1.56-.89-2.13-.23-.55-.47-.47-.65-.48h-.55c-.19 0-.5.07-.76.36s-1 1-1 2.43c0 1.43 1.02 2.8 1.16 2.99.14.19 2 3.04 4.84 4.26 2.84 1.22 2.84.81 3.35.76.51-.05 1.72-.7 1.97-1.39.24-.69.24-1.29.17-1.39-.06-.1-.26-.15-.55-.29z"/>
+              </svg>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 2 Clicks Lavanderia - Made with ❤️ and
+          < code /> . Site criado por <a
+            href="#" target="_blank"><strong>Winter Sro</strong></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="promo-popup" id="promoPopup">
+    <button class="close-btn" onclick="document.getElementById('promoPopup').style.display='none'">&times;</button>
+    <h4>🎉 Promoção de Novembro!</h4>
+    <p>Ganhe <strong>10% de desconto</strong> no seu primeiro serviço!</p>
+    <p>Oferta acaba em <span id="countdown">--:--:--</span></p>
+    <a href="https://api.whatsapp.com/send?l=pt&phone=5511983499718" target="_blank" class="btn">Aproveitar agora</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+
+</html>
